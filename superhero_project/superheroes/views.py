@@ -20,8 +20,6 @@ def detail(request, hero_id):
 
 def create(request):
     if request.method == "POST":
-        # save the form contents as a new db object
-        # return to index
         name = request.POST.get('name')
         alter_ego = request.POST.get('alter_ego')
         primary = request.POST.get('primary')
